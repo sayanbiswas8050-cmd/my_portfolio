@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayan Biswas Protfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "header">
+        <div class="container">
+            <!-- <nav>
+                <img src="images/103871.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav> -->
+            <!-- <nav>
+                <img src="images/103871.png" class="logo" alt="logo">
+                <ul id="nav-menu">
+                    <li class="nav-close"><i class="fas fa-times" onclick="closemenu()" aria-label="Close menu" role="button" tabindex="0"></i></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <i class="fas fa-bars" id="nav-open" onclick="openmenu()" aria-label="Open menu" role="button" tabindex="0"></i>
+            </nav> -->
+            <nav>
+                <img src="images/103871.png" class="logo">
+            
+                <ul id="nav-menu">
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+            
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>AI/ML Engineer</p>
+                <h1>Hi, I'm <span>Sayan Biswas</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------about------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/protfolio-photo_1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        “I am a data science student looking for a challenging role where I can apply and improve my skills. I am eager to learn
+                        new methods and technologies and work well in a team. I want to grow professionally while contributing to the
+                        organization’s success.”
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences', event)">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Python</span>
+                                <ul class="sub-skill">
+                                    <li>NumPy</li>
+                                    <li>Pandas</li>
+                                    <li>Matplotlib</li>
+                                    <li>Seaborn</li>
+                                </ul>
+                            </li>
+                    
+                            <li>
+                                <span>Machine Learning</span>
+                                <ul class="sub-skill">
+                                    <li>Scikit-learn</li>
+                                    <li>Understanding all basic ML Algoritham </li>
+                                </ul>
+                            </li>
+                    
+                            <li>
+                                <span>NLP</span>
+                                <ul class="sub-skill">
+                                    <li>NLTK</li>
+                                    <li>Regular Expression</li>
+                                </ul>
+                            </li>
+                    
+                            <li>
+                                <span>SQL</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>Currently no Experience</span><br>.... </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2026</span><br>Data Science from TIU Kolkata </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ================portfolio================ -->
+ 
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/creation_2011500651.png">
+                    <div class="layer">
+                        <h3>T20 cricket Score and win prediction</h3>
+                        <p>This app helps users understand match momentum by predicting scores and win probabilities 
+                            based on live condition like overs, wickets, and run rate.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/freepik__the-style-is-candid-image-photography-with-natural__97098.png">
+                    <div class="layer">
+                        <h3>Rain prediction</h3>
+                        <p>The app predict real-time weather data through API integration.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/creation_2011505142.png">
+                    <div class="layer">
+                        <h3>WhatsApp Analysis</h3>
+                        <p>Built a WhatsApp Chat Analyzer using Streamlit, Python, NLP, and data visualization to 
+                            extract insights such as user activity, sentiment trends, and communication patterns.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ===============contact============== -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>sayanbiswas@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>7001542512</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sayan-biswas-53461a335/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/sayanbiswas8050-cmd"><i class="fab fa-github"></i></a>
+                        <a href="https://www.kaggle.com/"><i class="fab fa-kaggle"></i></a>
+                    </div>
+                    <a href="images/Sayan_Biswas_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname,event) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <!-- <script>
+        var sidemanu = document.getElementById("nav-menu")
+
+        function openmenu(){
+            sidemanu.style.right ="0"
+        }
+        function closemenu() {
+                sidemanu.style.right = "-400px"
+        }
+    </script> -->
+    <script>
+        const sidemenu = document.getElementById("nav-menu");
+
+        function openmenu() {
+            sidemenu.classList.add("open");
+        }
+        function closemenu() {
+            sidemenu.classList.remove("open");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwfM0Hh1khbIocksK5i4JvJQTyD5Yy2ri1d3ceqvYUPZTfefQshQbiSgQGhdgwG9Cw1/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+</html>
